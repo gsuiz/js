@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vitrine{
+            display: flex;
+            flex-direction: column;
+        }
+        .vitrine>div{
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        #carrinho{
+            padding: 0 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="vitrine">
+        <h2>Vitrine:</h2>
+        <div>
+            <div>
+                <img src="minilojavirtual/image.jpg">
+                <p>camiseta</p>
+                <a href="#" class="adicionar">Adicionar ao carrinho!</a>
+            </div>
+            <div>
+                <img src="minilojavirtual/image.jpg">
+                <p>short</p>
+                <a href="#" class="adicionar">Adicionar ao carrinho!</a>
+            </div>
+            <div>
+                <img src="minilojavirtual/image.jpg">
+                <p>sapato</p>
+                <a href='#' class="adicionar">Adicionar ao carrinho!</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Carrinho:</h2>
+        <div id="carrinho">
+            <div id="camiseta"></div>
+            <div id="short"></div>
+            <div id="sapato"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
